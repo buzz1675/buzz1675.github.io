@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./styles.css/styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/fd1baa698f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script>
+
+    <title>Portfolio Website</title>
+  </head>
+  <body class="skills_page">
+    <header>
+      <div class="main_nav">
+        <h1>Joshua Busley's Portfolio</h1>
+        <div class="container borderYtoX">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Me</a>
+          <a href="skills.html">Skills</a>
+          <a>Portfolio</a>
+          <a>Contact</a>
+        </div>
+      </div>
+    </header>
+    <div class="skills_intro">
+      <div class="skills_text align_center">
+        <div class="skills">
+          <h1>My Skills</h1>
+          <p class="skill_summary">
+            Since beginnning to code in early 2023, I have learned numerous
+            skills and tehniques to tackle a wide variety of coding problems.
+            From the basics of HTML and CSS to GitHub and complex functions with
+            Javascript, I am constantly learning and improving to tackle
+            everything that heads my way.
+          </p>
+          <p class="italic">
+            See more information on what I have learned below. <br />
+            Hover and click each icon to learn more
+          </p>
+          <p class="italic"></p>
+        </div>
+      </div>
+      <div class="sphere align_center">
+        <span class="content"></span>
+      </div>
+    </div>
+    <div class="skill_gallery" id="skill_gallery">
+      <div class="image_container">
+        <img
+          src="./imgs/html 5.svg"
+          alt=""
+          class="skill"
+          onclick="showInfo(0)"
+        />
+        <div class="info_box">
+          <h2>HTML</h2>
+          <p>
+            Studying HTML has equipped me with a range of valuable skills.
+            Firstly, I have gained a thorough understanding of the fundamental
+            building blocks of web development, including HTML tags, attributes,
+            and elements. I have learned how to structure and organize content
+            using semantic HTML, which enhances accessibility and search engine
+            optimization. Additionally, I am proficient in creating forms,
+            tables, and lists, allowing for interactive and well-structured web
+            pages. I have also honed my ability to troubleshoot and debug HTML
+            code effectively. Overall, my HTML studies have provided me with the
+            essential skills to create and manipulate the structure and content
+            of web pages proficiently.
+          </p>
+        </div>
+      </div>
+      <div class="image_container">
+        <img src="./imgs/css.svg" alt="" class="skill" onclick="showInfo(1)" />
+        <div class="info_box">
+          <h2>CSS</h2>
+          <p>
+            Studying CSS has equipped me with valuable skills in web design. I
+            have learned how to style and customize web pages using CSS
+            selectors, properties, and values. By understanding the box model
+            and layout techniques, I can create visually appealing and
+            responsive designs such as the one you are looking at right now. CSS
+            has provided me with the essential skills to enhance the aesthetics
+            and layout of web pages effectively for the end user.
+          </p>
+        </div>
+      </div>
+      <div class="image_container">
+        <img src="./imgs/git.svg" alt="" class="skill" onclick="showInfo(2)" />
+        <div class="info_box">
+          <h2>Git</h2>
+          <p>
+            Learning Git has been a valuable experience for me. Through Git, I
+            have gained essential skills in version control and collaboration. I
+            have learned how to create and manage repositories, track changes,
+            and create branches to work on different features or fixes. Git has
+            empowered me to efficiently collaborate with other developers by
+            merging and resolving conflicts. It has also given me the ability to
+            revert changes when needed and maintain a clean and organized
+            project history. Overall, mastering Git has equipped me with the
+            skills necessary to streamline development workflows and effectively
+            manage code repositories.
+          </p>
+        </div>
+      </div>
+      <div class="image_container">
+        <img
+          src="./imgs/javascript.svg"
+          alt=""
+          class="skill"
+          onclick="showInfo(3)"
+        />
+        <div class="info_box">
+          <h2>Javascript</h2>
+          <p>
+            Learning JavaScript has been an incredibly valuable journey for me.
+            With JavaScript, I have acquired versatile skills in web development
+            and programming. I have gained a solid understanding of variables,
+            data types, and control structures, enabling me to write dynamic and
+            interactive code. JavaScript's powerful functionality has allowed me
+            to manipulate HTML elements, handle events, and create engaging user
+            experiences. I have also honed my skills in working with arrays,
+            objects, and functions, which are fundamental concepts in JavaScript
+            programming. Overall, my JavaScript studies have equipped me with
+            the skills to bring interactivity, functionality, and logic to web
+            pages and applications. I have also learned how to efficiently add
+            code from other creators onto my existing sites and pages to enhance
+            the functionality of them
+          </p>
+        </div>
+      </div>
+    </div>
+    <h2 class="more_to_come">And many more skills still to learn!</h2>
+
+    <script src="function.js"></script>
+  </body>
+</html>
