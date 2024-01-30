@@ -1,13 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import './Home.css'
 
-function App() {
+const Home = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Edit <code>src/App.js</code> and save to start the page.
         </p>
         <a
           className="App-link"
@@ -20,6 +19,6 @@ function App() {
       </header>
     </div>
   );
-}
+};
 
-export default App;
+export default Home;
