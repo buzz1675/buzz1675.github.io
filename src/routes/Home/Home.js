@@ -106,9 +106,11 @@ const Home = () => {
             </p>
           </div>
           <p className="name_description">
-            I'm a totally self taught Full-Stack developer with a passion for
+            I'm a totally self taught Full-Stack Engineer with a passion for
             coding. Welcome to my portfolio!
           </p>
+
+          
         </div>
       </div>
     </div>
