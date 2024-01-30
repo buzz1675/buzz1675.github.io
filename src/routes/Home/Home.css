@@ -37,31 +37,41 @@
     }
   }
   
+  .pop {
+    display: inline-flex;
+    margin: 0;
+  }
+  
+  
   .rubberBand {
+    color: cyan;
+
+
     animation: rubberBand;
     animation-duration: 1s;
   }
   
   @keyframes rubberBand {
-    from {
-      transform: scale3d(1, 1, 1);
+    0% {
+      transform: scale(1);
     }
     30% {
-      transform: scale3d(1.25, 0.75, 1);
+      transform: scale(1.25);
     }
     40% {
-      transform: scale3d(0.75, 1.25, 1);
+      transform: scale(0.75);
     }
     50% {
-      transform: scale3d(1.15, 0.85, 1);
+      transform: scale(1.15);
     }
     65% {
-      transform: scale3d(0.95, 1.05, 1);
+      transform: scale(0.95);
     }
     75% {
-      transform: scale3d(1.05, 0.95, 1);
+      transform: scale(1.05);
     }
-    to {
-      transform: scale3d(1, 1 1);
+    100% {
+      transform: scale(1);
     }
   }
+  
