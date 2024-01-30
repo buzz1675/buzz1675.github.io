@@ -92,7 +92,8 @@ body {
   }
   .contact-links {
     width: 100%;
-    text-align: center;
+  text-align: center;
+  
   }
   
   .contact-links > li {
@@ -132,10 +133,13 @@ body {
     opacity: 0.85;
   }
   
-  .contact-links a span {
+  .contact-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 40px;
-    line-height: 80px;
-    color: #fff;
+    height: 80px; /* Set the same height as the circle */
+    color: black;
   }
   
   @keyframes slide-icon {
