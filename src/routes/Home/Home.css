@@ -1,77 +1,75 @@
 .App {
-    text-align: center;
-  }
-  
-  .App-logo {
-    height: 40vmin;
-    pointer-events: none;
-  }
-  
-  @media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-      animation: App-logo-spin infinite 20s linear;
-    }
-  }
-  
-  .App-header {
-    background-color: #282c34;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
-  }
-  
-  .App-link {
-    color: #61dafb;
-  }
-  
-  @keyframes App-logo-spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
-  
-  .pop {
-    display: inline-flex;
-    margin: 0;
-  }
-  
-  
-  .rubberBand {
-    color: cyan;
+  background-color: #030c1b;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
 
+div.title_container {
+  position: relative;
+  margin-left: 0;
+}
 
-    animation: rubberBand;
-    animation-duration: 1s;
+div.name_container {
+  text-align: left;
+  font-weight: 600;
+  font-size: 4rem;
+}
+
+#hi-my-name {
+  font-weight: 200;
+  font-size: 2rem;
+  color: cyan;
+  margin: 0;
+  text-align: left;
+}
+
+.pop {
+  display: inline-flex;
+  margin-left: -0.25rem;
+  padding: 0;
+  margin: 0 -1.5px;
+}
+
+.rubberBand {
+  color: cyan;
+
+  animation: rubberBand;
+  animation-duration: 1s;
+}
+div.name_bottomline {
+  margin-top: -25px;
+}
+
+@keyframes rubberBand {
+  0% {
+    transform: scale(1);
   }
-  
-  @keyframes rubberBand {
-    0% {
-      transform: scale(1);
-    }
-    30% {
-      transform: scale(1.25);
-    }
-    40% {
-      transform: scale(0.75);
-    }
-    50% {
-      transform: scale(1.15);
-    }
-    65% {
-      transform: scale(0.95);
-    }
-    75% {
-      transform: scale(1.05);
-    }
-    100% {
-      transform: scale(1);
-    }
+  30% {
+    transform: scale(1.25);
   }
-  
+  40% {
+    transform: scale(0.75);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  65% {
+    transform: scale(0.95);
+  }
+  75% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+p.name_description {
+  font-size: 1.5rem;
+  margin-top: -0.5rem;
+}
