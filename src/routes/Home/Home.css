@@ -26,6 +26,7 @@
   justify-content: flex-end; /* Center the content horizontally */
   position: relative;
   width: 100%;
+  margin-top: 2vw;
 }
 
 div.name_container {
