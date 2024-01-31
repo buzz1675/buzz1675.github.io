@@ -1,5 +1,9 @@
 .App {
-  background-color: #1c1d25;
+  background: radial-gradient(
+    circle at 3% 25%,
+    rgba(0, 40, 83, 1) 0%,
+    rgba(4, 12, 24, 1) 100%
+  );
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -9,9 +13,19 @@
   color: white;
 }
 
-div.title_container {
+.title_container {
   position: relative;
-  margin-left: 0;
+  top: 50%;
+  transform: translate(50%, 35%);
+  text-align: center;
+  color: #fff; /* Set your text color */
+  z-index: 1; /* Ensure the title is on top of the image */
+}
+.front_cover_container {
+  display: flex;
+  justify-content: flex-end; /* Center the content horizontally */
+  position: relative;
+  width: 100%;
 }
 
 div.name_container {
@@ -74,4 +88,6 @@ p.name_description {
   margin-top: -0.5rem;
 }
 
-/*Icon styles*/
+img.front_cover_image {
+  height: 50vw;
+}

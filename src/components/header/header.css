@@ -1,0 +1,41 @@
+div.header_container{
+    background-color: transparent;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 10px;
+}
+
+img.LetterJ{
+    height: 7vh;
+    width: 7vh;
+}
+
+.nav_menu ul {
+    display: flex;
+    padding-top: 0px;
+    width: 100%;
+  }
+
+  .nav_menu ul li {
+    list-style: none;
+  }
+
+  .nav_link {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+  }
+
+  .nav_link a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1em;
+    color: white;
+    padding: 15px 10px;
+    margin: 0 10px;
+    border-bottom: 2px solid transparent; /* Add a transparent border-bottom */
+  cursor: pointer;
+  }

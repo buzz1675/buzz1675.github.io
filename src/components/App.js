@@ -4,20 +4,19 @@ import Home from "../routes/Home/Home";
 import Header from "./header/header";
 import { useEffect, useState } from "react";
 import Loader from "./Loader/Loader";
+import About from "../routes/About/About";
 
 function App() {
   return (
-    <Router>
-      <div className="app_container">
-        <Loader />
-        <div id="content">
-          <Header />
-          <Routes>
-            <Route path="/" element={<Home />} />
-          </Routes>
-        </div>
+    <div className="app_container">
+      <Loader />
+      <div id="content">
+        <Header />
+        <Home />
+        <About/>
+
       </div>
-    </Router>
+    </div>
   );
 }
 

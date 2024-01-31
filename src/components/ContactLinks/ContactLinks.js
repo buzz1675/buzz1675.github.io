@@ -5,6 +5,7 @@ import {
   faCodepen,
   faGithub,
   faLinkedin,
+  faInstagram
 } from "@fortawesome/free-brands-svg-icons";
 import './ContactLinks.css'
 
@@ -27,10 +28,10 @@ const ContactLinks = (props) => {
         <li>
           <a
             onMouseEnter={(e) => slideIcon(e.target)}
-            href="https://twitter.com/RiccardoZanutta"
+            href="https://twitter.com"
             target="_blank"
           >
-            <FontAwesomeIcon className="contact_icon" icon={faTwitter} />
+            <FontAwesomeIcon className="contact_icon" icon={faInstagram} />
           </a>
         </li>
         <li>
