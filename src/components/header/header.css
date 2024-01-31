@@ -5,6 +5,7 @@ div.header_container{
     justify-content: space-around;
     width: 100%;
     padding: 10px;
+    z-index: 1;
 }
 
 img.LetterJ{
