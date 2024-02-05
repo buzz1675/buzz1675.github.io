@@ -19,9 +19,9 @@ const Header = () => {
               smooth={true}
               offset={100}
               duration={1000}
-            >About</Link>
-
-            <a>About</a>
+            >
+              About
+            </Link>
           </li>
           <li className="nav_link">
             <a>Skills</a>
