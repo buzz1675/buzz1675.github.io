@@ -4,12 +4,42 @@ import ContactLinks from "../../components/ContactLinks/ContactLinks";
 import Ai from "../../imgs/ai.png";
 
 const Home = () => {
+  const THRESHOLD = 5;
+
   const addRubberBandClass = (element) => {
     element.classList.add("rubberBand");
     setTimeout(() => {
       element.classList.remove("rubberBand");
     }, 1000);
   };
+
+  const handleHover = (e) => {
+    const { clientX, clientY } = e;
+    const { clientWidth, clientHeight } = document.documentElement;
+
+    const vertical = (clientX / clientWidth - 0.5) * 2;
+    const horizontal = (clientY / clientHeight - 0.5) * 2;
+    const rotateY = (THRESHOLD / 2 - horizontal * THRESHOLD).toFixed(2);
+    const rotateX = (vertical * THRESHOLD - THRESHOLD / 2).toFixed(2);
+
+    document.querySelector(
+      ".card"
+    ).style.transform = `perspective(${clientWidth}px) rotateX(${rotateY}deg) rotateY(${rotateX}deg) scale3d(1, 1, 1)`;
+  };
+
+  const resetStyles = () => {
+    document.querySelector(".card").style.transform = "";
+  };
+
+  useEffect(() => {
+    document.addEventListener("mousemove", handleHover);
+    document.addEventListener("mouseleave", resetStyles);
+
+    return () => {
+      document.removeEventListener("mousemove", handleHover);
+      document.removeEventListener("mouseleave", resetStyles);
+    };
+  }, []);
 
   return (
     <div className="App">
@@ -115,8 +145,10 @@ const Home = () => {
             </p>
           </div>
         </div>
-        <img src={Ai} className="front_cover_image" />
-
+        <div className="card">
+          {" "}
+          <img src={Ai} className="front_cover_image" />
+        </div>
       </div>
 
       <ContactLinks />

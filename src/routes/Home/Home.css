@@ -92,3 +92,11 @@ p.name_description {
 img.front_cover_image {
   height: 50vw;
 }
+
+div.card{
+  transition: transform 0.1s ease;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+
