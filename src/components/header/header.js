@@ -1,7 +1,7 @@
 import React from "react";
 import LetterJ from "../../imgs/Letter J.png";
 import "./header.css";
-
+import { Link } from "react-scroll";
 const Header = () => {
   return (
     <div className="header_container">
@@ -12,13 +12,22 @@ const Header = () => {
             <a>Home</a>
           </li>
           <li className="nav_link">
-            <a href="#about">About</a>
+            <Link
+              activeClass="active"
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={100}
+              duration={1000}
+            >About</Link>
+
+            <a>About</a>
           </li>
           <li className="nav_link">
             <a>Skills</a>
           </li>
           <li className="nav_link">
-            <a >Projects</a>
+            <a>Projects</a>
           </li>
         </ul>
       </div>
