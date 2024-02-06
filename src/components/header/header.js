@@ -9,7 +9,16 @@ const Header = () => {
       <div className="nav_menu">
         <ul>
           <li className="nav_link">
-            <a>Home</a>
+          <Link
+              activeClass="active"
+              to="home"
+              spy={true}
+              smooth={true}
+              offset={100}
+              duration={1000}
+            >
+              Home
+            </Link>
           </li>
           <li className="nav_link">
             <Link

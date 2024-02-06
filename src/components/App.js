@@ -11,8 +11,9 @@ function App() {
       <Loader />
       <div id="content">
         <Header/>
-        <Home />
+        <Home id="home"/>
         <About id="about"/>
+
 
       </div>
     </div>

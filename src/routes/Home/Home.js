@@ -42,7 +42,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="App">
+    <div id='home'className="App">
       <div className="front_cover_container">
         {" "}
         <div className="title_container">
