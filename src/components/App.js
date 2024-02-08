@@ -14,7 +14,6 @@ function App() {
         <Header />
         <Home id="home" />
         <About id="about" />
-        <About id="about" />
 
         <ScrollBar />
       </div>

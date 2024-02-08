@@ -1,12 +1,13 @@
 .scrollbar{
     width: 100px;
-    height: 100px;
-    background-color: pink;
+    height: 50%;
+    background-color: transparent;
     position: fixed;
     z-index: 1;
     right: 0;
-    bottom: 50%;
+    bottom: 25%;
     display: flex;
+    padding: 20px;
 }
 
 
@@ -17,13 +18,17 @@ ul.scrollbar_section_list{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    color: white;
+    margin-right:10% ;
 }
 
 div.progress_container{
-    width: 10px;
+    width: 5px;
     background-color: red;
+    border-radius: 50px;
 }
 div.progress_fill{
-    height: 60%;
+    height: 100%;
     background-color: white;
+    border-radius: 50px;
 }

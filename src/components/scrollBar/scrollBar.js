@@ -57,7 +57,7 @@ const ScrollBar = () => {
       <div className="progress_container">
         <div
           className="progress_fill"
-          style={{ height: scrollPercentage }}
+          style={{ height: `${scrollPercentage}%` }}
         ></div>
       </div>
     </div>
