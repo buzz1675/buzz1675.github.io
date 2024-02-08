@@ -1,0 +1,29 @@
+.scrollbar{
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+    position: fixed;
+    z-index: 1;
+    right: 0;
+    bottom: 50%;
+    display: flex;
+}
+
+
+
+
+ul.scrollbar_section_list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+div.progress_container{
+    width: 10px;
+    background-color: red;
+}
+div.progress_fill{
+    height: 60%;
+    background-color: white;
+}

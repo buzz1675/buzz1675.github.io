@@ -33,7 +33,16 @@ const Header = () => {
             </Link>
           </li>
           <li className="nav_link">
-            <a>Skills</a>
+          <Link
+              activeClass="active"
+              to="skills"
+              spy={true}
+              smooth={true}
+              offset={100}
+              duration={1000}
+            >
+              Skills
+            </Link>
           </li>
           <li className="nav_link">
             <a>Projects</a>
