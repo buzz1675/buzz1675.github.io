@@ -87,23 +87,24 @@ div.skills_content_container {
   color: rgb(201, 201, 1);
 }
 .icon.react {
-  color: #e34c26;
+  color: #61dbfb;
 }
 .icon.node {
-  color: #0cafff;
+  color: #3c873a
+  ;
 }
 .icon.github {
-  color: #e34c26;
+  color: #F14E32;
 }
 .icon.database {
-  color: #e34c26;
+  color: #00758f;
 }
 .icon.stripe {
-  color: #e34c26;
+  color: purple;
 }
 
 p.icon_name {
-  margin-top: -3vh;
+  margin-top: -2vh;
   font-size: 1rem;
   color: white;
 }

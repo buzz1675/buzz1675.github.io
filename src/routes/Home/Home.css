@@ -36,6 +36,7 @@ div.name_container {
 }
 
 #hi-my-name {
+  width: max-content;
   font-weight: 200;
   font-size: 2rem;
   color: cyan;
@@ -56,8 +57,13 @@ div.name_container {
   animation: rubberBand;
   animation-duration: 1s;
 }
+
+div.name_topline{
+  width: max-content;
+}
+
 div.name_bottomline {
-  margin-top: -25px;
+  margin-top: -1vh;
 }
 
 @keyframes rubberBand {

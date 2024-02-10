@@ -10,7 +10,7 @@ import {
   faStripe,
   faHtml5,
   faCss3,
-  faReact,
+  faReact,faGitAlt
 } from "@fortawesome/free-brands-svg-icons";
 import { faDatabase } from "@fortawesome/free-solid-svg-icons";
 
@@ -33,25 +33,25 @@ const Skills = () => {
                 <a className="skills_icon">
                   <FontAwesomeIcon className="icon css" icon={faCss3} />
                 </a>
-                <p className="icon_name">Node.js</p>
+                <p className="icon_name">CSS</p>
               </div>{" "}
               <div className="skill_container">
                 <a className="skills_icon">
                   <FontAwesomeIcon className="icon html" icon={faHtml5} />
                 </a>
-                <p className="icon_name">Node.js</p>
+                <p className="icon_name">HTML</p>
               </div>{" "}
               <div className="skill_container">
                 <a className="skills_icon">
                   <FontAwesomeIcon className="icon js" icon={faJs} />
                 </a>
-                <p className="icon_name">Node.js</p>
+                <p className="icon_name">JavaScript</p>
               </div>{" "}
               <div className="skill_container">
                 <a className="skills_icon">
                   <FontAwesomeIcon className="icon react" icon={faReact} />
                 </a>
-                <p className="icon_name">Node.js</p>
+                <p className="icon_name">React</p>
               </div>
             </div>
           </div>
@@ -66,9 +66,9 @@ const Skills = () => {
               </div>
               <div className="skill_container">
                 <a className="skills_icon">
-                  <FontAwesomeIcon className="icon github" icon={faGithub} />
+                  <FontAwesomeIcon className="icon github" icon={faGitAlt} />
                 </a>
-                <p className="icon_name">Node.js</p>
+                <p className="icon_name">Git</p>
               </div>
               <div className="skill_container">
                 <a className="skills_icon">
@@ -77,13 +77,13 @@ const Skills = () => {
                     icon={faDatabase}
                   />
                 </a>
-                <p className="icon_name">Node.js</p>
+                <p className="icon_name">SQL</p>
               </div>
               <div className="skill_container">
                 <a className="skills_icon">
                   <FontAwesomeIcon className="icon stripe" icon={faStripe} />
                 </a>
-                <p className="icon_name">Node.js</p>
+                <p className="icon_name">Stripe Integration</p>
               </div>
             </div>
           </div>

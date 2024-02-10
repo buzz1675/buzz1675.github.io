@@ -10,7 +10,7 @@ import Skills from "../routes/Skills/Skills";
 function App() {
   return (
     <div className="app_container">
-      <Loader />
+      
       <div id="content">
         <Header />
         <Home id="home" />
