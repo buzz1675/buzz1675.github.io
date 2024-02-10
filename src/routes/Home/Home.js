@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import "./Home.css";
 import ContactLinks from "../../components/ContactLinks/ContactLinks";
 import Ai from "../../imgs/ai.png";
-import { Reveal } from "../../components/Reveal/Reveal";
+import { Reveal } from "../../components/Reveals/Reveal";
 
 const Home = () => {
   const THRESHOLD = 5;

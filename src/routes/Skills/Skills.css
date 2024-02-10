@@ -26,6 +26,7 @@ div.skills_content_container {
   margin-bottom: 5%;
   background: linear-gradient(89.97deg, #00ffff 50.84%, #2f00ff 102.67%);
   width: 50%;
+  padding: 5%;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   display: flex;

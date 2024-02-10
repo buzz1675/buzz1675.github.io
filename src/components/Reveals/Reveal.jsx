@@ -55,7 +55,7 @@ export const Reveal = ({ children, loaderDuration = 2500 }) => {
           }}
           initial="hidden"
           animate={mainControls}
-          transition={{ duration: 0.5, delay: 0.5 }}
+          transition={{ duration: 0.5, delay: 0.75 }}
         >
           {children}
         </motion.div>
@@ -66,7 +66,7 @@ export const Reveal = ({ children, loaderDuration = 2500 }) => {
           }}
           initial="hidden"
           animate={slideControls}
-          transition={{ duration: 0.5, delay: 0.4 }}
+          transition={{ duration: 0.5, delay: 0.5 }}
           style={{
             position: "absolute",
             top: 5,

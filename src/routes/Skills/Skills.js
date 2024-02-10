@@ -10,11 +10,18 @@ import {
   faStripe,
   faHtml5,
   faCss3,
-  faReact,faGitAlt
+  faReact,
+  faGitAlt,
 } from "@fortawesome/free-brands-svg-icons";
 import { faDatabase } from "@fortawesome/free-solid-svg-icons";
+import { motion } from "framer-motion";
+import { RevealSkillIcon } from "../../components/Reveals/SkillsReveal";
 
 const Skills = () => {
+  const skillsVariants = {
+    hidden: { opacity: 0, x: -50 },
+    visible: { opacity: 1, x: 0 },
+  };
   return (
     <div id="skills" className="skills_container">
       <div className="skills_content_container">
@@ -29,62 +36,78 @@ const Skills = () => {
           <div className="frontend_technologies">
             <h3>Front-End Technologies</h3>
             <div className="skill_icon_container">
-              <div className="skill_container">
-                <a className="skills_icon">
-                  <FontAwesomeIcon className="icon css" icon={faCss3} />
-                </a>
-                <p className="icon_name">CSS</p>
-              </div>{" "}
-              <div className="skill_container">
-                <a className="skills_icon">
-                  <FontAwesomeIcon className="icon html" icon={faHtml5} />
-                </a>
-                <p className="icon_name">HTML</p>
-              </div>{" "}
-              <div className="skill_container">
-                <a className="skills_icon">
-                  <FontAwesomeIcon className="icon js" icon={faJs} />
-                </a>
-                <p className="icon_name">JavaScript</p>
-              </div>{" "}
-              <div className="skill_container">
-                <a className="skills_icon">
-                  <FontAwesomeIcon className="icon react" icon={faReact} />
-                </a>
-                <p className="icon_name">React</p>
-              </div>
+              <RevealSkillIcon delay={0.6}>
+                <div className="skill_container">
+                  <a className="skills_icon">
+                    <FontAwesomeIcon className="icon css" icon={faCss3} />
+                  </a>
+                  <p className="icon_name">CSS</p>
+                </div>{" "}
+              </RevealSkillIcon>
+              <RevealSkillIcon delay={0.7}>
+                <div className="skill_container">
+                  <a className="skills_icon">
+                    <FontAwesomeIcon className="icon html" icon={faHtml5} />
+                  </a>
+                  <p className="icon_name">HTML</p>
+                </div>{" "}
+              </RevealSkillIcon>
+              <RevealSkillIcon delay={0.8}>
+                <div className="skill_container">
+                  <a className="skills_icon">
+                    <FontAwesomeIcon className="icon js" icon={faJs} />
+                  </a>
+                  <p className="icon_name">JavaScript</p>
+                </div>{" "}
+              </RevealSkillIcon>
+              <RevealSkillIcon delay={0.9}>
+                <div className="skill_container">
+                  <a className="skills_icon">
+                    <FontAwesomeIcon className="icon react" icon={faReact} />
+                  </a>
+                  <p className="icon_name">React</p>
+                </div>
+              </RevealSkillIcon>
             </div>
           </div>
           <div className="backend_technologies">
             <h3>Back-End Technologies</h3>
             <div className="skill_icon_container">
-              <div className="skill_container">
-                <a className="skills_icon">
-                  <FontAwesomeIcon className="icon node" icon={faNodeJs} />
-                </a>
-                <p className="icon_name">Node.js</p>
-              </div>
-              <div className="skill_container">
-                <a className="skills_icon">
-                  <FontAwesomeIcon className="icon github" icon={faGitAlt} />
-                </a>
-                <p className="icon_name">Git</p>
-              </div>
-              <div className="skill_container">
-                <a className="skills_icon">
-                  <FontAwesomeIcon
-                    className="icon database"
-                    icon={faDatabase}
-                  />
-                </a>
-                <p className="icon_name">SQL</p>
-              </div>
-              <div className="skill_container">
-                <a className="skills_icon">
-                  <FontAwesomeIcon className="icon stripe" icon={faStripe} />
-                </a>
-                <p className="icon_name">Stripe Integration</p>
-              </div>
+              <RevealSkillIcon delay={0.6}>
+                <div className="skill_container">
+                  <a className="skills_icon">
+                    <FontAwesomeIcon className="icon node" icon={faNodeJs} />
+                  </a>
+                  <p className="icon_name">Node.js</p>
+                </div>
+              </RevealSkillIcon>
+              <RevealSkillIcon delay={0.7}>
+                <div className="skill_container">
+                  <a className="skills_icon">
+                    <FontAwesomeIcon className="icon github" icon={faGitAlt} />
+                  </a>
+                  <p className="icon_name">Git</p>
+                </div>
+              </RevealSkillIcon>{" "}
+              <RevealSkillIcon delay={0.8}>
+                <div className="skill_container">
+                  <a className="skills_icon">
+                    <FontAwesomeIcon
+                      className="icon database"
+                      icon={faDatabase}
+                    />
+                  </a>
+                  <p className="icon_name">SQL</p>
+                </div>
+              </RevealSkillIcon>{" "}
+              <RevealSkillIcon delay={0.9}>
+                <div className="skill_container">
+                  <a className="skills_icon">
+                    <FontAwesomeIcon className="icon stripe" icon={faStripe} />
+                  </a>
+                  <p className="icon_name">Stripe Integration</p>
+                </div>
+              </RevealSkillIcon>
             </div>
           </div>
         </div>

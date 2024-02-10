@@ -1,6 +1,6 @@
 import React from "react";
 import "./About.css";
-import { Reveal } from "../../components/Reveal/Reveal";
+import { Reveal } from "../../components/Reveals/Reveal";
 
 const About = () => {
   return (
