@@ -14,7 +14,7 @@ const Header = () => {
               to="home"
               spy={true}
               smooth={true}
-              offset={100}
+              offset={0}
               duration={1000}
             >
               Home
@@ -26,7 +26,7 @@ const Header = () => {
               to="about"
               spy={true}
               smooth={true}
-              offset={100}
+              offset={0}
               duration={1000}
             >
               About

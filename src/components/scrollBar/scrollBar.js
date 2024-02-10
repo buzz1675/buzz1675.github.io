@@ -15,7 +15,6 @@ const ScrollBar = () => {
         (scrollY / (documentHeight - windowHeight)) * 100
       );
       setScrollPercentage(scrollPercent);
-      console.log(scrollPercentage);
     };
     window.addEventListener("scroll", handleScroll);
   });

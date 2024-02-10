@@ -1,4 +1,11 @@
 
-  
+  .content_background{
+    background: linear-gradient(
+      180deg,
+      rgba(4, 12, 24, 1) 0%,
+      rgba(4, 12, 24, 1) 19%,
+      rgba(0, 40, 83, 1) 100%
+    );
+  }
   
  
