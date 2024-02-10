@@ -1,29 +1,53 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { motion, useInView, useAnimation } from "framer-motion";
 
-export const Reveal = ({ children }) => {
+export const Reveal = ({ children, loaderDuration = 2500 }) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   const mainControls = useAnimation();
   const slideControls = useAnimation();
+  const [revealStarted, setRevealStarted] = useState(false);
 
   useEffect(() => {
-    if (isInView) {
+    let timeout;
+
+    if (isInView && revealStarted) {
+      // Start the reveal animations
       mainControls.start("visible");
       slideControls.start("visible");
+    } else {
+      // If not in view or reveal hasn't started, reset the animations
+      mainControls.start("hidden");
+      slideControls.start("hidden");
     }
-  }, [isInView]);
 
-  const getWidth = () => {
-    if (ref.current) {
-      return ref.current.clientWidth;
-    }
-    return 0;
-  };
+    return () => {
+      clearTimeout(timeout);
+    };
+  }, [isInView, revealStarted, mainControls, slideControls]);
+
+  useEffect(() => {
+    let timeout
+    // Set a timeout to start the reveal animations after the loader duration
+    timeout = setTimeout(() => {
+      setRevealStarted(true);
+    }, loaderDuration);
+
+    return () => {
+      clearTimeout(timeout);
+    };
+  }, [loaderDuration]);
 
   return (
     <>
-      <div ref={ref} style={{ position: "relative", width:'fit-content',overflow: "hidden" }}>
+      <div
+        ref={ref}
+        style={{
+          position: "relative",
+          width: "fit-content",
+          overflow: "hidden",
+        }}
+      >
         <motion.div
           variants={{
             hidden: { opacity: 0, y: 75 },
@@ -31,18 +55,18 @@ export const Reveal = ({ children }) => {
           }}
           initial="hidden"
           animate={mainControls}
-          transition={{ duration: 0.5, delay: 0.15 }}
+          transition={{ duration: 0.5, delay: 0.5 }}
         >
           {children}
         </motion.div>
         <motion.div
           variants={{
             hidden: { left: 0 },
-            visible: { left: '100%' },
+            visible: { left: "100%" },
           }}
           initial="hidden"
           animate={slideControls}
-          transition={{ duration: 0.5,}}
+          transition={{ duration: 0.5, delay: 0.4 }}
           style={{
             position: "absolute",
             top: 5,
