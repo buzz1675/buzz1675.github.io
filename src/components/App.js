@@ -6,6 +6,8 @@ import Loader from "./Loader/Loader";
 import About from "../routes/About/About";
 import ScrollBar from "./scrollBar/scrollBar";
 import Skills from "../routes/Skills/Skills";
+import Projects from "../routes/Projects/Projects";
+import Overview from "../routes/Overview/Overview";
 
 function App() {
   return (
@@ -16,8 +18,10 @@ function App() {
         <Home id="home" />
         <div className="content_background">
           <About id="about" />
+          <Overview/>
           <Skills />
         </div>
+        <Projects/>
 
         <ScrollBar />
       </div>

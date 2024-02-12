@@ -15,8 +15,8 @@ div.skills_content_container {
   padding: 20px;
   background: radial-gradient(
     circle at 100% 100%,
-    rgba(13, 0, 56, 1) 0%,
-    rgba(0, 68, 103, 1) 100%
+    #0d0038 0%,
+    #004467 100%
   );
   display: flex;
 }
@@ -56,19 +56,17 @@ div.skills_content_container {
 }
 
 .skills_icon {
-  background-color: rgba(255, 255, 255, 0.795);
   border-radius: 100%;
   position: relative;
   display: block;
   padding: 40px;
-  margin: 1vw;
-  width: 2vw;
-  height: 2vw;
+  width: 3.5vw;
+  height: 3.5vw;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  font-size: 4rem;
+  font-size: 6rem;
   color: #1c1d25;
 }
 

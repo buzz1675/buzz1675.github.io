@@ -38,7 +38,7 @@ const Header = () => {
               to="skills"
               spy={true}
               smooth={true}
-              offset={100}
+              offset={0}
               duration={1000}
             >
               Skills

@@ -16,6 +16,7 @@ import {
 import { faDatabase } from "@fortawesome/free-solid-svg-icons";
 import { motion } from "framer-motion";
 import { RevealSkillIcon } from "../../components/Reveals/SkillsReveal";
+import { Reveal } from "../../components/Reveals/Reveal";
 
 const Skills = () => {
   const skillsVariants = {
@@ -27,6 +28,7 @@ const Skills = () => {
       <div className="skills_content_container">
         <div className="skills_title">
           <h2>My Skills</h2>
+
           <p>
             I have worked with a wide variety of technologies in web and
             software development. From Back-End to Front-End
@@ -34,7 +36,9 @@ const Skills = () => {
         </div>
         <div className="technologies_list">
           <div className="frontend_technologies">
-            <h3>Front-End Technologies</h3>
+            <Reveal>
+              <h3>Front-End Technologies</h3>
+            </Reveal>
             <div className="skill_icon_container">
               <RevealSkillIcon delay={0.6}>
                 <div className="skill_container">
@@ -71,7 +75,9 @@ const Skills = () => {
             </div>
           </div>
           <div className="backend_technologies">
-            <h3>Back-End Technologies</h3>
+            <Reveal>
+              <h3>Back-End Technologies</h3>
+            </Reveal>
             <div className="skill_icon_container">
               <RevealSkillIcon delay={0.6}>
                 <div className="skill_container">

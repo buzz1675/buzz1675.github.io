@@ -1,0 +1,29 @@
+.projects_container {
+    height: 100vh;
+    background-image: url("../../imgs/81770.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.projects_title{
+    padding-top: 5%;
+    margin-left: 15%;
+    width: fit-content;
+    color: white;
+    font-size: 3rem;
+    font-weight: 400;
+    text-align: left;
+    background: linear-gradient(69.97deg, #8267fa 50.84%, #69ff75 102.67%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.projects_title h2{
+    margin-top: -5%;
+    text-decoration: underline;
+}
+.projects_title p{
+    font-size: 1.7rem;
+}

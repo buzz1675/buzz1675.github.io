@@ -48,7 +48,7 @@ const Home = () => {
         {" "}
         <div className="title_container">
           <Reveal>
-            <h3 id="hi-my-name">Hey There,</h3>
+            <h3 style={{position: '!relative'}}id="hi-my-name">Hey There,</h3>
           </Reveal>
           <div className="name_container">
             <Reveal>
