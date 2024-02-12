@@ -24,12 +24,12 @@ const Home = () => {
     const rotateX = (vertical * THRESHOLD - THRESHOLD / 2).toFixed(2);
 
     document.querySelector(
-      ".card"
+      ".home_card"
     ).style.transform = `perspective(${clientWidth}px) rotateX(${rotateY}deg) rotateY(${rotateX}deg) scale3d(1, 1, 1)`;
   };
 
   const resetStyles = () => {
-    document.querySelector(".card").style.transform = "";
+    document.querySelector(".home_card").style.transform = "";
   };
 
   useEffect(() => {
@@ -48,7 +48,7 @@ const Home = () => {
         {" "}
         <div className="title_container">
           <Reveal>
-            <h3 style={{position: '!relative'}}id="hi-my-name">Hey There,</h3>
+            <h3 id="hi-my-name">Hey There,</h3>
           </Reveal>
           <div className="name_container">
             <Reveal>
@@ -237,7 +237,7 @@ const Home = () => {
             </Reveal>
           </div>
         </div>
-        <div className="card">
+        <div className="home_card">
           {" "}
           <img src={Ai} className="front_cover_image" />
         </div>
