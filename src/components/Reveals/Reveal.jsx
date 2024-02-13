@@ -12,11 +12,9 @@ export const Reveal = ({ children, loaderDuration = 2500 }) => {
     let timeout;
 
     if (isInView && revealStarted) {
-      // Start the reveal animations
       mainControls.start("visible");
       slideControls.start("visible");
     } else {
-      // If not in view or reveal hasn't started, reset the animations
       mainControls.start("hidden");
       slideControls.start("hidden");
     }
@@ -28,7 +26,6 @@ export const Reveal = ({ children, loaderDuration = 2500 }) => {
 
   useEffect(() => {
     let timeout
-    // Set a timeout to start the reveal animations after the loader duration
     timeout = setTimeout(() => {
       setRevealStarted(true);
     }, loaderDuration);
