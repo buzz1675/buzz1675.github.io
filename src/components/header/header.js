@@ -57,7 +57,16 @@ const Header = () => {
             </Link>
           </li>
           <li className="nav_link">
-            <a>Projects</a>
+          <Link
+              activeClass="active"
+              to="projects"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={1000}
+            >
+              Projects
+            </Link>
           </li>
         </ul>
       </div>
