@@ -1,11 +1,12 @@
 .overview_container {
   height: 100vh;
+  display: flex;
+  margin: 0;
 }
 .overview_container_content {
   width: 75vw;
   height: 75vh;
-  padding: 20px;
-  margin: 6rem auto;
+  margin:  auto;
   color: white;
 }
 .overview_container_content h2{
