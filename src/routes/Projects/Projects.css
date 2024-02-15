@@ -27,3 +27,7 @@
 .projects_title p{
     font-size: 1.7rem;
 }
+
+.projects_cards_container{
+    display: flex;
+}
