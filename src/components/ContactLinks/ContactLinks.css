@@ -5,7 +5,6 @@ body {
   }
   
   .links-container {
-    width: 20%;
     position: fixed;
     left: 0;
     bottom: 20px;

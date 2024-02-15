@@ -10,15 +10,15 @@ import {
   faReact,
 } from "@fortawesome/free-brands-svg-icons";
 import { faDatabase } from "@fortawesome/free-solid-svg-icons";
-import ClosedProjectCard from "../../components/ProjectCard/ClosedProjectCard";
+import ClosedProjectCard from "../../components/ClosedProjectCard/ClosedProjectCard";
 import { motion, AnimatePresence } from "framer-motion";
 
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
 
-useEffect(()=>{
-  console.log(selectedProject)
-}, [selectedProject])
+  useEffect(() => {
+    console.log(selectedProject);
+  }, [selectedProject]);
 
   const projects = [
     {
@@ -81,48 +81,43 @@ useEffect(()=>{
             />
           ))}
           <AnimatePresence>
-        {selectedProject && (
-          <motion.div
-            className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-          >
-            {projects.map((project) => (
-              project.title === selectedProject && (
-                <motion.div
-                  className="bg-white rounded-lg p-4 shadow-md max-w-lg mx-auto"
-                  layoutId={`card-container`}
-                  key={project.name}
-                  initial={{ scale: 0.8, opacity: 0 }}
-                  animate={{ scale: 1, opacity: 1 }}
-                  exit={{ scale: 0.8, opacity: 0 }}
-                >
-                  <motion.div className="relative">
-                    <motion.button
-                      className="absolute top-2 right-2 py-1 px-2 text-center text-white bg-red-500 rounded-full"
-                      onClick={() => setSelectedProject('')}
-                    >
-                      Close
-                    </motion.button>
-                    <motion.h2 className="text-xl font-bold mb-2 text-purple-600">{project.title}</motion.h2>
-                    <motion.h5 className="text-sm font-bold mb-1 text-gray-700">{project.title}</motion.h5>
-                    <motion.p className="text-md text-gray-700 mb-4">{project.description}</motion.p>
-                    <motion.p
-                      className="text-md text-gray-700"
-                      initial={{ opacity: 0 }}
-                      animate={{ opacity: 1 }}
-                      exit={{ opacity: 0 }}
-                    >
-                      Additional content can go here!
-                    </motion.p>
-                  </motion.div>
-                </motion.div>
-              )
-            ))}
-          </motion.div>
-        )}
-      </AnimatePresence>
+            {selectedProject && (
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+              >
+                {projects.map(
+                  (project) =>
+                    project.title === selectedProject && (
+                      <motion.div
+                        layoutId={`card-container`}
+                        key={project.name}
+                        initial={{ scale: 0.8, opacity: 0 }}
+                        animate={{ scale: 1, opacity: 1 }}
+                        exit={{ scale: 0.8, opacity: 0 }}
+                      >
+                        <motion.div className="relative">
+                          <motion.button onClick={() => setSelectedProject("")}>
+                            Close
+                          </motion.button>
+                          <motion.h2>{project.title}</motion.h2>
+                          <motion.h5>{project.title}</motion.h5>
+                          <motion.p>{project.description}</motion.p>
+                          <motion.p
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            exit={{ opacity: 0 }}
+                          >
+                            Additional content can go here!
+                          </motion.p>
+                        </motion.div>
+                      </motion.div>
+                    )
+                )}
+              </motion.div>
+            )}
+          </AnimatePresence>
         </div>
       </div>
     </div>

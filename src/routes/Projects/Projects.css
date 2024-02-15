@@ -29,5 +29,7 @@
 }
 
 .projects_cards_container{
+    margin: 5%;
     display: flex;
+    z-index: 5;
 }
