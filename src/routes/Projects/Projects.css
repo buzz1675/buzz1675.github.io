@@ -31,5 +31,6 @@
 .projects_cards_container{
     margin: 5%;
     display: flex;
+    justify-content: center;
     z-index: 5;
 }

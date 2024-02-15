@@ -1,0 +1,15 @@
+.open_project_overlay {
+    position: absolute;
+    width: 100vw;
+
+  }
+  
+  .open_project_card {
+    width: 50vw;
+    margin: 0 auto;
+    z-index: 1000;
+    background-color: white; /* Adjust as needed */
+    padding: 20px; /* Adjust as needed */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for better visibility */
+    /* Add any other styles you need for the open card */
+  }

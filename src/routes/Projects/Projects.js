@@ -12,6 +12,7 @@ import {
 import { faDatabase } from "@fortawesome/free-solid-svg-icons";
 import ClosedProjectCard from "../../components/ClosedProjectCard/ClosedProjectCard";
 import { motion, AnimatePresence } from "framer-motion";
+import OpenProjectCard from "../../components/OpenProjectCard/OpenProjectCard";
 
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -61,7 +62,31 @@ const Projects = () => {
         { name: "Stripe", icon: faStripe },
         { name: "SQL", icon: faDatabase },
       ],
-    },
+    },{
+      title: "Reddit Clone",
+      description:
+        "A clone of Reddit, a social media platform where users can post, comment, and upvote posts.",
+      technologies: [
+        { name: "JavaScript", icon: faJs },
+        { name: "HTML", icon: faHtml5 },
+        { name: "CSS", icon: faCss3 },
+        { name: "React", icon: faReact },
+        { name: "Node.js", icon: faNodeJs },
+        { name: "Git", icon: faGit },
+      ],
+    },{
+      title: "Reddit Clone",
+      description:
+        "A clone of Reddit, a social media platform where users can post, comment, and upvote posts.",
+      technologies: [
+        { name: "JavaScript", icon: faJs },
+        { name: "HTML", icon: faHtml5 },
+        { name: "CSS", icon: faCss3 },
+        { name: "React", icon: faReact },
+        { name: "Node.js", icon: faNodeJs },
+        { name: "Git", icon: faGit },
+      ],
+    }
   ];
 
   return (
@@ -86,35 +111,15 @@ const Projects = () => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
+                className="open_project_overlay"
               >
-                {projects.map(
-                  (project) =>
-                    project.title === selectedProject && (
-                      <motion.div
-                        layoutId={`card-container`}
-                        key={project.name}
-                        initial={{ scale: 0.8, opacity: 0 }}
-                        animate={{ scale: 1, opacity: 1 }}
-                        exit={{ scale: 0.8, opacity: 0 }}
-                      >
-                        <motion.div className="relative">
-                          <motion.button onClick={() => setSelectedProject("")}>
-                            Close
-                          </motion.button>
-                          <motion.h2>{project.title}</motion.h2>
-                          <motion.h5>{project.title}</motion.h5>
-                          <motion.p>{project.description}</motion.p>
-                          <motion.p
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
-                            exit={{ opacity: 0 }}
-                          >
-                            Additional content can go here!
-                          </motion.p>
-                        </motion.div>
-                      </motion.div>
-                    )
-                )}
+                <OpenProjectCard
+                  onClick={() => setSelectedProject(null)}
+                  project={
+                    projects.find((proj) => proj.title === selectedProject) ||
+                    {}
+                  }
+                />
               </motion.div>
             )}
           </AnimatePresence>
