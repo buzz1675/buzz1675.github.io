@@ -8,8 +8,23 @@ const ClosedProjectCard = ({ project, onClick }) => {
     onClick(project);
   };
 
+  const generateRandomColor = () => {
+    const letters = "0123456789ABCDEF";
+    let color = "#";
+    for (let i = 0; i < 6; i++) {
+      color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+  };
+
+  const [backgroundColor, setBackgroundColor] = useState(generateRandomColor);
+  
   return (
-    <motion.div className="project_card" onClick={handleCardClick}>
+    <motion.div
+      className="project_card"
+      style={{ background: backgroundColor }}
+      onClick={handleCardClick}
+    >
       <motion.div layout>
         <motion.h2 className="title">{project.title}</motion.h2>
       </motion.div>

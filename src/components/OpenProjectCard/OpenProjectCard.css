@@ -6,7 +6,7 @@
   
   .open_project_card {
     width: 50vw;
-    margin: 0 auto;
+    margin: 1% auto;
     z-index: 1000;
     background-color: white; /* Adjust as needed */
     padding: 20px; /* Adjust as needed */

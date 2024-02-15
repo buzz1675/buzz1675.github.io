@@ -1,9 +1,11 @@
-.project_card{
+.project_card {
   background-color: white;
   width: 10%;
   height: 30vh;
-margin: 0 0.5vw;
-border-radius: 10px;
-display: flex;
-align-items: flex-end;
-padding: 1%;}
+  margin: 0 0.75vw;
+  border-radius: 10px;
+  display: flex;
+  align-items: flex-end;
+  padding: 1%;
+  box-shadow: 7px 10px 5px 0px rgba(255,255,255,0.2);
+}
