@@ -62,7 +62,8 @@ const Projects = () => {
         { name: "Stripe", icon: faStripe },
         { name: "SQL", icon: faDatabase },
       ],
-    },{
+    },
+    {
       title: "Reddit Clone",
       description:
         "A clone of Reddit, a social media platform where users can post, comment, and upvote posts.",
@@ -74,7 +75,8 @@ const Projects = () => {
         { name: "Node.js", icon: faNodeJs },
         { name: "Git", icon: faGit },
       ],
-    },{
+    },
+    {
       title: "Reddit Clone",
       description:
         "A clone of Reddit, a social media platform where users can post, comment, and upvote posts.",
@@ -86,7 +88,7 @@ const Projects = () => {
         { name: "Node.js", icon: faNodeJs },
         { name: "Git", icon: faGit },
       ],
-    }
+    },
   ];
 
   return (
@@ -103,6 +105,7 @@ const Projects = () => {
               project={project}
               isOpen={selectedProject === project}
               onClick={() => setSelectedProject(project.title)}
+              svgPath="../../images/reddit-1.svg"
             />
           ))}
           <AnimatePresence>

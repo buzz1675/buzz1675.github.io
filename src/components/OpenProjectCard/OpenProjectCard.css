@@ -1,6 +1,7 @@
 .open_project_overlay {
     position: absolute;
     width: 100vw;
+    z-index: 1000;
 
   }
   

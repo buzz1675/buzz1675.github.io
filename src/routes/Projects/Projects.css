@@ -1,5 +1,5 @@
 .projects_container {
-    height: 100vh;
+    min-height: 100vh;
     background-image: url("../../imgs/81770.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -33,4 +33,5 @@
     display: flex;
     justify-content: center;
     z-index: 5;
+    flex-wrap: wrap;
 }
