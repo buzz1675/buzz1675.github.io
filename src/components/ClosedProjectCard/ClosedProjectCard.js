@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import "./ClosedProjectCard.css";
+import Spotify from "../../imgs/Screenshot 2024-02-21 141936.png";
 
 const ClosedProjectCard = ({ project, onClick }) => {
   const handleCardClick = () => {
@@ -32,63 +33,14 @@ const ClosedProjectCard = ({ project, onClick }) => {
   return (
     <>
       <motion.div
-        className="project_card"
-        style={{ backgroundColor }}
         onClick={handleCardClick}
         whileHover={{ scale: 1.2 }}
         onHoverStart={handleMouseEnter}
         onHoverEnd={handleMouseLeave}
+        class="foldcard"
       >
-        <div className="title-container">
-          <h2 className="title">{project.title}</h2>
-        </div>
-      </motion.div>
-      <motion.div
-        onClick={handleCardClick}
-        onHoverStart={handleMouseEnter}
-        onHoverEnd={handleMouseLeave}
-        class="container"
-      >
-        <div class="card">
-          <h2>{project.title}</h2>
-          <i class="fas fa-arrow-right"></i>
-          <p>a lonely trip.</p>
-          <div class="pic"></div>
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-
-          <button style={{ backgroundColor: backgroundColor }}></button>
-        </div>
-      </motion.div>
-      <motion.div onClick={handleCardClick}
-        whileHover={{ scale: 1.2 }}
-        onHoverStart={handleMouseEnter}
-        onHoverEnd={handleMouseLeave} class="foldcard">
         <div class="image">
-          <img src="http://1.bp.blogspot.com/-EhPr4LXcywE/Udr594sPHTI/AAAAAAAAAJ4/Tv4y4CBLTPM/s400/Cristina-Otero-2.jpg" />
+          <img  src={Spotify} />
         </div>
         <div style={{ background: backgroundColor }} class="details">
           <div class="center">
