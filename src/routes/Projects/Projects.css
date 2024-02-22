@@ -6,6 +6,7 @@
     background-size: cover;
     height: auto;
     padding-bottom: 5%;
+    transition: all 1s;
 }
 
 

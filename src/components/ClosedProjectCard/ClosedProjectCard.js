@@ -40,7 +40,7 @@ const ClosedProjectCard = ({ project, onClick }) => {
         class="foldcard"
       >
         <div class="image">
-          <img  src={project.image} />
+          <img  src={project.ThumbnailImage} />
         </div>
         <div style={{ background: backgroundColor }} class="details">
           <div class="center">
