@@ -1,6 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "./OpenProjectCard.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 
 const OpenProjectCard = ({ project, onClick }) => {
     return (
@@ -16,13 +18,22 @@ const OpenProjectCard = ({ project, onClick }) => {
           <motion.h2>{project.title}</motion.h2>
           <motion.h5>{project.title}</motion.h5>
           <motion.p>{project.description}</motion.p>
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-          >
-            Additional content can go here!
-          </motion.p>
+          <ul>
+            {project.technologies.map((tech) => (
+              <motion.li
+                layout
+                key={tech}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+              >
+                
+              <FontAwesomeIcon icon={tech.icon} />
+              {tech.name}
+           
+              </motion.li>
+            ))}
+          </ul>
         </motion.div>
       </motion.div>
     );

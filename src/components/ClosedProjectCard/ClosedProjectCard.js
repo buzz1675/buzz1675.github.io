@@ -40,18 +40,16 @@ const ClosedProjectCard = ({ project, onClick }) => {
         class="foldcard"
       >
         <div class="image">
-          <img  src={Spotify} />
+          <img  src={project.image} />
         </div>
         <div style={{ background: backgroundColor }} class="details">
           <div class="center">
             <h1>
-              Someone famous
-              <br />
-              <span>team leader</span>
+              {project.title}
+              
             </h1>
             <p>
-              Lorem ipsum is simple dummy text on the printing and typesetting
-              industry.
+              {project.shortDescription}
             </p>
           </div>
         </div>

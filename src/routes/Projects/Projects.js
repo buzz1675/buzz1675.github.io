@@ -13,6 +13,7 @@ import { faDatabase } from "@fortawesome/free-solid-svg-icons";
 import ClosedProjectCard from "../../components/ClosedProjectCard/ClosedProjectCard";
 import { motion, AnimatePresence } from "framer-motion";
 import OpenProjectCard from "../../components/OpenProjectCard/OpenProjectCard";
+import SpotifyLogo from "../../imgs/Screenshot 2024-02-21 141936.png";
 
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -24,6 +25,7 @@ const Projects = () => {
   const projects = [
     {
       title: "Reddit Clone",
+      image: SpotifyLogo,
       description:
         "A clone of Reddit, a social media platform where users can post, comment, and upvote posts.",
       technologies: [
@@ -37,6 +39,10 @@ const Projects = () => {
     },
     {
       title: "Spotify Clone",
+      image: SpotifyLogo,
+      shortDescription:
+        "This is an app that allows users to search for songs and add them to custom playlists to save.",
+
       description:
         "A clone of Spotify, a music streaming platform where users can search for songs and add them to custom playlists to save.",
       technologies: [
@@ -50,6 +56,8 @@ const Projects = () => {
     },
     {
       title: "eCommerce Site",
+      image: SpotifyLogo,
+
       description:
         "Final CodeCademy Project of an eCommerce site with Stripe integration, backend development, and frontend design.",
       technologies: [
@@ -65,6 +73,8 @@ const Projects = () => {
     },
     {
       title: "Reddit Clone",
+      image: SpotifyLogo,
+
       description:
         "A clone of Reddit, a social media platform where users can post, comment, and upvote posts.",
       technologies: [
@@ -78,6 +88,8 @@ const Projects = () => {
     },
     {
       title: "Reddit Clone",
+      image: SpotifyLogo,
+
       description:
         "A clone of Reddit, a social media platform where users can post, comment, and upvote posts.",
       technologies: [
