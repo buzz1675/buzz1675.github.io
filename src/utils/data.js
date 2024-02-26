@@ -14,14 +14,17 @@ import redditLogo from "../imgs/redditLogo.png";
 import RedditScreenshot from "../imgs/RedditScreenshot.png";
 import ecommerceScreenshot from "../imgs/ecommerceScreenshot.png";
 import ecommerceThumbnail from "../imgs/ecommerceThumbnail.png";
-
-
+import identityLogo from "../imgs/identityLogo.png";
+import identityScreenshot from "../imgs/identityScreenshot.png";
 export const projects = [
   {
     title: "Reddit Clone",
     ThumbnailImage: redditLogo,
     screenshot: RedditScreenshot,
     backgroundColour: "#FFFFFF",
+    shortDescription:
+      "An app for users to navigate and search through Reddit Posts and Subreddits.",
+
     description:
       "A clone of Reddit, a social media platform where users can post, comment, and upvote posts.",
     technologies: [
@@ -57,6 +60,8 @@ export const projects = [
     ThumbnailImage: ecommerceThumbnail,
     screenshot: ecommerceScreenshot,
     backgroundColour: "#FFFFFF",
+    shortDescription:
+      "A fully working ecommerce site with user registration, and Stripe checkout",
 
     description:
       "Final CodeCademy Project of an eCommerce site with Stripe integration, backend development, and frontend design.",
@@ -72,35 +77,16 @@ export const projects = [
     ],
   },
   {
-    title: "Reddit Clone",
-    ThumbnailImage: SpotifyLogo,
-    screenshot: SpotifyAppScreenshot,
+    title: "Identity-Plus/Medical-Plus",
+    ThumbnailImage: identityLogo,
+    screenshot: identityScreenshot,
+    backgroundColour: "#FFFFFF",
 
     description:
-      "A clone of Reddit, a social media platform where users can post, comment, and upvote posts.",
+      "Final CodeCademy Project of an eCommerce site with Stripe integration, backend development, and frontend design.",
     technologies: [
-      { name: "JavaScript", icon: faJs },
+      { name: "Wordpress", icon: faJs },
       { name: "HTML", icon: faHtml5 },
-      { name: "CSS", icon: faCss3 },
-      { name: "React", icon: faReact },
-      { name: "Node.js", icon: faNodeJs },
-      { name: "Git", icon: faGit },
-    ],
-  },
-  {
-    title: "Reddit Clone",
-    ThumbnailImage: SpotifyLogo,
-    screenshot: SpotifyAppScreenshot,
-
-    description:
-      "A clone of Reddit, a social media platform where users can post, comment, and upvote posts.",
-    technologies: [
-      { name: "JavaScript", icon: faJs },
-      { name: "HTML", icon: faHtml5 },
-      { name: "CSS", icon: faCss3 },
-      { name: "React", icon: faReact },
-      { name: "Node.js", icon: faNodeJs },
-      { name: "Git", icon: faGit },
     ],
   },
 ];
