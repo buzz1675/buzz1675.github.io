@@ -12,6 +12,9 @@ import SpotifyLogo from "../imgs/Screenshot 2024-02-21 141936.png";
 import SpotifyAppScreenshot from "../imgs/SpotifyAppScreenshot.png";
 import redditLogo from "../imgs/redditLogo.png";
 import RedditScreenshot from "../imgs/RedditScreenshot.png";
+import ecommerceScreenshot from "../imgs/ecommerceScreenshot.png";
+import ecommerceThumbnail from "../imgs/ecommerceThumbnail.png";
+
 
 export const projects = [
   {
@@ -51,8 +54,9 @@ export const projects = [
   },
   {
     title: "eCommerce Site",
-    ThumbnailImage: SpotifyLogo,
-    screenshot: SpotifyAppScreenshot,
+    ThumbnailImage: ecommerceThumbnail,
+    screenshot: ecommerceScreenshot,
+    backgroundColour: "#FFFFFF",
 
     description:
       "Final CodeCademy Project of an eCommerce site with Stripe integration, backend development, and frontend design.",
