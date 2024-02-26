@@ -16,17 +16,18 @@ import ecommerceScreenshot from "../imgs/ecommerceScreenshot.png";
 import ecommerceThumbnail from "../imgs/ecommerceThumbnail.png";
 import identityLogo from "../imgs/identityLogo.png";
 import identityScreenshot from "../imgs/identityScreenshot.png";
-export const projects = [
-  {
-    title: "Reddit Clone",
-    ThumbnailImage: redditLogo,
-    screenshot: RedditScreenshot,
-    backgroundColour: "#FFFFFF",
-    shortDescription:
-      "An app for users to navigate and search through Reddit Posts and Subreddits.",
 
+
+export const projects = [
+  
+  {
+    title: "Spotify Clone",
+    ThumbnailImage: SpotifyLogo,
+    screenshot: SpotifyAppScreenshot,
+    shortDescription:
+      "This is an app that allows users to search for songs and add them to custom playlists to save.",
     description:
-      "A clone of Reddit, a social media platform where users can post, comment, and upvote posts.",
+      "This was my very first major project with CodeCademy. It uses React and makes API calls to Spotify to gather song data. It also use OAuth to allow users to log in and save their playlists to their own spotify account. I learned about state and login authentication and the project gave me the initial building blocks to move forward with the other projects I have completed.",
     technologies: [
       { name: "JavaScript", icon: faJs },
       { name: "HTML", icon: faHtml5 },
@@ -35,17 +36,16 @@ export const projects = [
       { name: "Node.js", icon: faNodeJs },
       { name: "Git", icon: faGit },
     ],
-  },
-  {
-    title: "Spotify Clone",
-    ThumbnailImage: SpotifyLogo,
-    screenshot: SpotifyAppScreenshot,
-
+  },{
+    title: "Reddit Clone",
+    ThumbnailImage: redditLogo,
+    screenshot: RedditScreenshot,
+    backgroundColour: "#FFFFFF",
     shortDescription:
-      "This is an app that allows users to search for songs and add them to custom playlists to save.",
+      "An app for users to navigate and search through Reddit Posts and Subreddits.",
 
     description:
-      "A clone of Spotify, a music streaming platform where users can search for songs and add them to custom playlists to save.",
+      "This was my second large project with CodeCademy. It built on the initial Spotify Clone and i used the skills learned from that in this. It features multiple components that render based on the user's search results as well as the data from the Reddit API. This application doesn't actually use the users login details or account within Reddit itself, as this was beyond the scope of the project, but instead uses the Reddit JSON API to retrieve data and eliminate the need for OAuth. Using React I added extra features such as a light and dark mode toggle, a search bar, loading containers and made the app mobile friendly. ",
     technologies: [
       { name: "JavaScript", icon: faJs },
       { name: "HTML", icon: faHtml5 },

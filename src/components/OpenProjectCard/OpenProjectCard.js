@@ -3,37 +3,53 @@ import { motion } from "framer-motion";
 import "./OpenProjectCard.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+import { faX } from "@fortawesome/free-solid-svg-icons";
 const OpenProjectCard = ({ project, onClick }) => {
   return (
-    <motion.div
-      layoutId={`card-container`}
-      initial={{ scale: 0.8, opacity: 0 }}
-      animate={{ scale: 1, opacity: 1 }}
-      exit={{ scale: 0.8, opacity: 0 }}
-      className="open_project_card"
-    >
-      <motion.div layout>
-        <motion.button onClick={() => onClick(null)}>Close</motion.button>
-        <img src={project.screenshot}></img>
-        <motion.h2>{project.title}</motion.h2>
-        <motion.h5>{project.title}</motion.h5>
-        <motion.p>{project.description}</motion.p>
-        <ul>
-          {project.technologies.map((tech) => (
-            <motion.li
-              layout
-              key={tech}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-            >
-              <FontAwesomeIcon icon={tech.icon} />
-              {tech.name}
-            </motion.li>
-          ))}
-        </ul>
+    <>
+      <motion.div
+        layoutId={`card-container`}
+        initial={{ scale: 0.8, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        exit={{ scale: 0.8, opacity: 0 }}
+        className="open_project_card"
+      >
+        <motion.div layout>
+          <img src={project.screenshot} className="project_image"></img>
+          <div className="openProjectCard_content">
+            <motion.h2>{project.title}</motion.h2>
+            <div className="description_technologies_container">
+              <div className="description_container">
+                <h3>Description</h3>
+                <motion.p>{project.description}</motion.p>
+              </div>
+              <div className="technologies_container">
+                <h3>Technologies</h3>
+                <ul>
+                  {project.technologies.map((tech) => (
+                    <motion.li
+                      layout
+                      key={tech}
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      exit={{ opacity: 0 }}
+                      className="tech-list-item"
+                    >
+                      <FontAwesomeIcon icon={tech.icon} />
+                      <span>{tech.name}</span>
+
+                    </motion.li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </motion.div>
       </motion.div>
-    </motion.div>
+      <motion.button className="close_button" onClick={() => onClick(null)}>
+        <FontAwesomeIcon icon={faX} />
+      </motion.button>
+    </>
   );
 };
 
