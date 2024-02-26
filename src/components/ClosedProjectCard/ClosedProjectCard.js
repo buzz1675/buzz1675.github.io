@@ -38,6 +38,7 @@ const ClosedProjectCard = ({ project, onClick }) => {
         onHoverStart={handleMouseEnter}
         onHoverEnd={handleMouseLeave}
         class="foldcard"
+        style={{background:project.backgroundColour}}
       >
         <div class="image">
           <img  src={project.ThumbnailImage} />

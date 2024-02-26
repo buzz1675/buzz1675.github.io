@@ -10,13 +10,15 @@ import {
 import { faDatabase } from "@fortawesome/free-solid-svg-icons";
 import SpotifyLogo from "../imgs/Screenshot 2024-02-21 141936.png";
 import SpotifyAppScreenshot from "../imgs/SpotifyAppScreenshot.png";
+import redditLogo from "../imgs/redditLogo.png";
+import RedditScreenshot from "../imgs/RedditScreenshot.png";
 
 export const projects = [
   {
     title: "Reddit Clone",
-    ThumbnailImage: SpotifyLogo,
-    screenshot: SpotifyAppScreenshot,
-
+    ThumbnailImage: redditLogo,
+    screenshot: RedditScreenshot,
+    backgroundColour: "#FFFFFF",
     description:
       "A clone of Reddit, a social media platform where users can post, comment, and upvote posts.",
     technologies: [
