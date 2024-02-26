@@ -1,20 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./Projects.css";
-import {
-  faNodeJs,
-  faGit,
-  faJs,
-  faStripe,
-  faHtml5,
-  faCss3,
-  faReact,
-} from "@fortawesome/free-brands-svg-icons";
-import { faDatabase } from "@fortawesome/free-solid-svg-icons";
 import ClosedProjectCard from "../../components/ClosedProjectCard/ClosedProjectCard";
 import { motion, AnimatePresence } from "framer-motion";
 import OpenProjectCard from "../../components/OpenProjectCard/OpenProjectCard";
-import SpotifyLogo from "../../imgs/Screenshot 2024-02-21 141936.png";
-import SpotifyAppScreenshot from "../../imgs/SpotifyAppScreenshot.png";
 import {projects} from "../../utils/data.js";
 
 const Projects = () => {
