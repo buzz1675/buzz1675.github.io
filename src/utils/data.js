@@ -27,7 +27,7 @@ export const projects = [
     shortDescription:
       "This is an app that allows users to search for songs and add them to custom playlists to save.",
     description:
-      "This was my very first major project with CodeCademy. It uses React and makes API calls to Spotify to gather song data. It also use OAuth to allow users to log in and save their playlists to their own spotify account. I learned about state and login authentication and the project gave me the initial building blocks to move forward with the other projects I have completed.",
+      "This marked my inaugural significant undertaking with CodeCademy, a pivotal journey into the realm of web development. Employing React, the project involves making API calls to Spotify, enabling the extraction of valuable song data. One standout feature is the integration of OAuth, providing users with the ability to log in and seamlessly save playlists to their personal Spotify accounts. Throughout this project, I delved into fundamental concepts such as state management and login authentication, laying the cornerstone for subsequent endeavors. The invaluable lessons learned here equipped me with the essential building blocks, setting the trajectory for success in the various projects that followed.",
     technologies: [
       { name: "JavaScript", icon: faJs },
       { name: "HTML", icon: faHtml5 },
@@ -45,7 +45,7 @@ export const projects = [
       "An app for users to navigate and search through Reddit Posts and Subreddits.",
 
     description:
-      "This was my second large project with CodeCademy. It built on the initial Spotify Clone and i used the skills learned from that in this. It features multiple components that render based on the user's search results as well as the data from the Reddit API. This application doesn't actually use the users login details or account within Reddit itself, as this was beyond the scope of the project, but instead uses the Reddit JSON API to retrieve data and eliminate the need for OAuth. Using React I added extra features such as a light and dark mode toggle, a search bar, loading containers and made the app mobile friendly. ",
+      "This marked my second significant venture with CodeCademy, evolving from the initial Spotify Clone and incorporating skills honed from that project. This application is distinguished by its utilisation of multiple components, dynamically rendering content based on user search results and data fetched from the Reddit API. Unlike other applications, this project doesn't delve into users' login details or Reddit accounts due to project scope limitations. Instead, it harnesses the power of the Reddit JSON API, eliminating the need for OAuth. With React, I introduced additional features including a versatile light and dark mode toggle, an intuitive search bar, loading containers for a seamless user experience, and ensured optimal performance on mobile devices.",
     technologies: [
       { name: "JavaScript", icon: faJs },
       { name: "HTML", icon: faHtml5 },
@@ -64,7 +64,7 @@ export const projects = [
       "A fully working ecommerce site with user registration, and Stripe checkout",
 
     description:
-      "Final CodeCademy Project of an eCommerce site with Stripe integration, backend development, and frontend design.",
+      "This marked my final endeavor in CodeCademy's Full Stack Engineer Course, encapsulating the entirety of my acquired knowledge. Encompassing a spectrum from React and CSS styling to SQL and database management, the project seamlessly integrated various technologies. Utilising Stripe for payment processing, the backend was constructed with Node.js and Express.js, ensuring a robust foundation. The implementation involved a database storing essential information like products, orders, user details, and categories. Key features include a functional account page for users to modify their login details, a mobile-friendly register and login page, and a streamlined Stripe checkout page leveraging the Stripe API. Employing GET and POST requests facilitated data communication with the backend, complemented by UPDATE and DELETE methods for handling data manipulation. The user experience was enhanced through dynamic functionalities like product search, sorting by price or category, and cart management—accomplished seamlessly with React Router, eliminating the need for page refreshes.",
     technologies: [
       { name: "JavaScript", icon: faJs },
       { name: "HTML", icon: faHtml5 },
@@ -83,7 +83,7 @@ export const projects = [
     backgroundColour: "#FFFFFF",
 
     description:
-      "Final CodeCademy Project of an eCommerce site with Stripe integration, backend development, and frontend design.",
+      "Identity-Plus serves as my business website, while Medical-Plus stands as its sister site. Originally developed by a company, Identity-Plus has undergone personal modifications and refinements under my guidance. With a solid grasp of WordPress, I've tailored layouts, introduced products, and created pages—all while prioritizing effective SEO practices. Building upon my WordPress expertise gained from Identity-Plus, I independently crafted Medical-Plus from scratch. Using themes and plugins, I successfully developed a fully functional e-commerce site—an accomplishment I take great pride in.",
     technologies: [
       { name: "Wordpress", icon: faJs },
       { name: "HTML", icon: faHtml5 },
