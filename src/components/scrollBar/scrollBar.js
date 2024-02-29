@@ -47,10 +47,40 @@ const ScrollBar = () => {
             </Link>
         </li>
         <li>
-          <p>Skills</p>
+      <Link
+              activeClass="active"
+              to="overview"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={1000}
+            >
+              Overview
+            </Link>
         </li>
         <li>
-          <p>Projects</p>
+      <Link
+              activeClass="active"
+              to="skills"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={1000}
+            >
+              Skills
+            </Link>
+        </li>
+        <li>
+      <Link
+              activeClass="active"
+              to="projects"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={1000}
+            >
+              Projects
+            </Link>
         </li>
       </ul>
       <div className="progress_container">
