@@ -51,7 +51,7 @@ const Overview = () => {
   ];
 
   return (
-    <div id="overview" className="overview_container">
+    <div id="overview" data-scroll-section className="overview_container">
       <div className="overview_container_content">
         <motion.div
           variants={textVariant(0.5)}

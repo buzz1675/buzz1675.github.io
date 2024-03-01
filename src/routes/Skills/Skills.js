@@ -25,7 +25,7 @@ const Skills = () => {
     visible: { opacity: 1, x: 0 },
   };
   return (
-    <div id="skills" className="skills_container">
+    <div id="skills" data-scroll-section className="skills_container">
       <div className="skills_content_container">
         <motion.div
           variants={textVariant(0.25)}

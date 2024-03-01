@@ -43,7 +43,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div id="home" className="App">
+    <div id="home" data-scroll-section className="App">
       <div className="front_cover_container">
         {" "}
         <div className="title_container">

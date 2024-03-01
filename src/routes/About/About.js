@@ -6,7 +6,7 @@ import { textVariant } from "../../utils/motion";
 
 const About = () => {
   return (
-    <div id="about" className="about_container">
+    <div id="about" data-scroll-section className="about_container">
       <div className="about_content_container">
         <motion.div
           variants={textVariant(0.25)}

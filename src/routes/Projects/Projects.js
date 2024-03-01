@@ -15,7 +15,7 @@ const Projects = () => {
   
 
   return (
-    <div id="projects" className="projects_container">
+    <div id="projects" data-scroll-section className="projects_container">
       <div className="projects_content">
         <div className="projects_title">
           <p>What I have done so far</p>
