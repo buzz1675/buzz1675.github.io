@@ -1,12 +1,11 @@
 import React, { useEffect, useState, useRef } from "react";
 import "./scrollBar.css";
-import { Link as ScrollLink, scroller } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
 
 const VerticalMenu = () => {
   const [activeSection, setActiveSection] = useState(null);
   const [markerPosition, setMarkerPosition] = useState(0);
-  const verticalOffsetPercentage = 150; // 5% of menu height
-  const markerRef = useRef(null); // Add a ref for the marker
+  const markerRef = useRef(null); 
 
   const menuRef = useRef(null);
 
@@ -26,7 +25,7 @@ const VerticalMenu = () => {
           scrollY < sectionOffset + sectionHeight
         ) {
           setActiveSection(sectionId);
-          const adjustmentValue = 64; // You can experiment with different values
+          const adjustmentValue = 64; 
           const menuItemOffsetTop = menuItems[index].offsetTop - adjustmentValue;
           const menuItemHeight = menuItems[index].offsetHeight;
           setMarkerPosition(menuItemOffsetTop + menuItemHeight);
