@@ -1,8 +1,8 @@
 .vertical-menu-wrapper{
-    height: 50%;
     background-color: transparent;
     position: fixed;
     z-index: 1;
+    height:205px;
     right: 0;
     bottom: 25%;
     display: flex;
@@ -10,6 +10,8 @@
     max-width: 230px;
     margin: 50px auto;
     display: flex;
+    text-transform: uppercase;
+    align-items: flex-start;
 }
 
 
@@ -21,8 +23,6 @@
   
   .vertical-menu {
     font-family: "Oswald", sans-serif;
-    text-transform: uppercase;
-    width: 220px;
   }
   
   .vertical-menu-wrapper {
@@ -34,7 +34,7 @@
   .active-marker {
     transition: transform 0.4s;
     width: 5px;
-    background-image: linear-gradient(90deg, #ff5e5e, #f54985);
+    background-color: #79e0faff;
     background-size: 100%;
     height: 30px;
     margin-left: 7px;
@@ -61,3 +61,4 @@
   .link--inverse-menu:hover, .link--inverse-menu:active {
     color: #d3d3d3;
   }
+
