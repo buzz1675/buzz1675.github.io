@@ -6,6 +6,17 @@ import Spotify from "../../imgs/Screenshot 2024-02-21 141936.png";
 const ClosedProjectCard = ({ project, onClick }) => {
   const handleCardClick = () => {
     onClick(project);
+    setTimeout(() => {
+      const scrollHeight = Math.max(
+        document.documentElement.scrollHeight,
+        document.body.scrollHeight,
+        document.documentElement.clientHeight
+      );
+      window.scrollTo({
+        top: scrollHeight,
+        behavior: "smooth",
+      });
+    }, 0);
   };
 
   const generateRandomColor = () => {

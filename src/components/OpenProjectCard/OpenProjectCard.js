@@ -18,10 +18,16 @@ const OpenProjectCard = ({ project, closeProject }) => {
         <motion.div layout>
           {project.link ? (
             <a href={project.link}>
-              <img src={project.screenshot} className="project_image"></img>
+              <motion.img src={project.screenshot} className="project_image" />
             </a>
           ) : (
-            <img src={project.screenshot} className="project_image"></img>
+            <a>
+              <motion.img
+                src={project.screenshot}
+                className="project_image"
+                transition={{ duration: 0 }}
+              />
+            </a>
           )}
 
           <div className="openProjectCard_content">
