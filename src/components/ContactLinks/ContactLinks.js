@@ -13,7 +13,6 @@ const ContactLinks = (props) => {
 
   const slideIcon = (element) => {
     const icon = element.querySelector("svg");
-    // Add the slide-icon class when the mouse enters
     if (icon) {
       icon.classList.add("slide-icon");
       setTimeout(() => {
@@ -28,7 +27,7 @@ const ContactLinks = (props) => {
         <li>
           <a
             onMouseEnter={(e) => slideIcon(e.target)}
-            href="https://twitter.com"
+            href="https://www.instagram.com/joshbusley/"
             target="_blank"
           >
             <FontAwesomeIcon className="contact_icon" icon={faInstagram} />
@@ -46,7 +45,7 @@ const ContactLinks = (props) => {
         <li>
           <a
             onMouseEnter={(e) => slideIcon(e.target)}
-            href="https://github.com/Riccardo-Zanutta"
+            href="https://github.com/buzz1675"
             target="_blank"
           >
             <FontAwesomeIcon icon={faGithub} />
