@@ -4,7 +4,8 @@ import "./OpenProjectCard.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { faX } from "@fortawesome/free-solid-svg-icons";
-const OpenProjectCard = ({ project, onClick }) => {
+const OpenProjectCard = ({ project, closeProject }) => {
+  const openLink = window.location.replace;
   return (
     <>
       <motion.div
@@ -15,7 +16,14 @@ const OpenProjectCard = ({ project, onClick }) => {
         className="open_project_card"
       >
         <motion.div layout>
-          <img src={project.screenshot} className="project_image"></img>
+          {project.link ? (
+            <a href={project.link}>
+              <img src={project.screenshot} className="project_image"></img>
+            </a>
+          ) : (
+            <img src={project.screenshot} className="project_image"></img>
+          )}
+
           <div className="openProjectCard_content">
             <motion.h2>{project.title}</motion.h2>
             <div className="description_technologies_container">
@@ -37,7 +45,6 @@ const OpenProjectCard = ({ project, onClick }) => {
                     >
                       <FontAwesomeIcon icon={tech.icon} />
                       <span>{tech.name}</span>
-
                     </motion.li>
                   ))}
                 </ul>
@@ -46,7 +53,10 @@ const OpenProjectCard = ({ project, onClick }) => {
           </div>
         </motion.div>
       </motion.div>
-      <motion.button className="close_button" onClick={() => onClick(null)}>
+      <motion.button
+        className="close_button"
+        onClick={() => closeProject(null)}
+      >
         <FontAwesomeIcon icon={faX} />
       </motion.button>
     </>

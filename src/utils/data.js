@@ -24,6 +24,7 @@ export const projects = [
     title: "Spotify Clone",
     ThumbnailImage: SpotifyLogo,
     screenshot: SpotifyAppScreenshot,
+    link:'https://buzz1675.github.io/spotify/',
     shortDescription:
       "This is an app that allows users to search for songs and add them to custom playlists to save.",
     description:
@@ -40,7 +41,10 @@ export const projects = [
     title: "Reddit Clone",
     ThumbnailImage: redditLogo,
     screenshot: RedditScreenshot,
+    link:'https://buzz1675.github.io/reddit/',
+
     backgroundColour: "#FFFFFF",
+
     shortDescription:
       "An app for users to navigate and search through Reddit Posts and Subreddits.",
 
@@ -59,6 +63,8 @@ export const projects = [
     title: "eCommerce Site",
     ThumbnailImage: ecommerceThumbnail,
     screenshot: ecommerceScreenshot,
+    link:'',
+
     backgroundColour: "#FFFFFF",
     shortDescription:
       "A fully working ecommerce site with user registration, and Stripe checkout",
@@ -80,6 +86,8 @@ export const projects = [
     title: "Identity-Plus/Medical-Plus",
     ThumbnailImage: identityLogo,
     screenshot: identityScreenshot,
+    link:'http://identity-plus.co.uk/',
+
     backgroundColour: "#FFFFFF",
 
     description:

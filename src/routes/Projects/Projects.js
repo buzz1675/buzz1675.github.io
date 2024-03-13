@@ -40,7 +40,7 @@ const Projects = () => {
                 className="open_project_overlay"
               >
                 <OpenProjectCard
-                  onClick={() => setSelectedProject(null)}
+                  closeProject={() => setSelectedProject(null)}
                   project={
                     projects.find((proj) => proj.title === selectedProject) ||
                     {}
