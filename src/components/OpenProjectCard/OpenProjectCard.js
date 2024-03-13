@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import "./OpenProjectCard.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import { faX } from "@fortawesome/free-solid-svg-icons";
+import { faX, faTimes } from "@fortawesome/free-solid-svg-icons";
 const OpenProjectCard = ({ project, closeProject }) => {
   const openLink = window.location.replace;
   return (
@@ -63,7 +63,7 @@ const OpenProjectCard = ({ project, closeProject }) => {
         className="close_button"
         onClick={() => closeProject(null)}
       >
-        <FontAwesomeIcon icon={faX} />
+        <FontAwesomeIcon icon={faTimes} />
       </motion.button>
     </>
   );

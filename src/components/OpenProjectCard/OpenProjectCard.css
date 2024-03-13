@@ -52,3 +52,29 @@ img.project_image:hover {
 .tech-list-item span {
   margin-left: 8px;
 }
+
+.close_button {
+  
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  background-color: rgb(224, 224, 224);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.close_button:hover {
+  background-color: rgb(201, 201, 201);
+
+  
+}
+.close_button svg {
+  font-size: 24px; 
+  color: #333; 
+}
+
+.close_button:hover svg {
+
+  color: #555; 
+}
