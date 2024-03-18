@@ -16,9 +16,31 @@ div.header_container {
   transform: translateY(0);
 }
 
+.title {
+  display: flex;
+  flex-direction: column;
+}
+
+div.title p{
+  font-weight: 600;
+  font-size: 2rem;
+  margin-bottom: -10px;
+  color: white;
+}
+p.cyan{
+  color: cyan !important;
+}
+.shift_right{
+  margin-left: 20px;
+}
+
 img.LetterJ {
   height: 7vh;
   width: 7vh;
+}
+
+.nav_menu{
+  display: flex;
 }
 
 .nav_menu ul {

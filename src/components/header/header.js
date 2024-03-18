@@ -25,8 +25,13 @@ const Header = () => {
   }, []);
 
   return (
-    <div className={`header_container ${isTop ? 'show' : 'hide'}`}>
-      <img src={LetterJ} alt="Letter J" className="LetterJ" />
+    <div className={`header_container ${isTop ? "show" : "hide"}`}>
+      <div className="title">
+        <p className="cyan">Josh</p>
+        <p className="shift_right">Busley</p>
+      </div>
+
+      
       <div className="nav_menu">
         <ul>
           <li className="nav_link">
