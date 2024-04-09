@@ -1,8 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faTwitter,
-  faCodepen,
+import {  
   faGithub,
   faLinkedin,
   faInstagram
@@ -33,15 +31,7 @@ const ContactLinks = (props) => {
             <FontAwesomeIcon className="contact_icon" icon={faInstagram} />
           </a>
         </li>
-        <li>
-          <a
-            onMouseEnter={(e) => slideIcon(e.target)}
-            href="https://codepen.io/rickzanutta/"
-            target="_blank"
-          >
-            <FontAwesomeIcon icon={faCodepen} />
-          </a>
-        </li>
+      
         <li>
           <a
             onMouseEnter={(e) => slideIcon(e.target)}
@@ -54,7 +44,7 @@ const ContactLinks = (props) => {
         <li>
           <a
             onMouseEnter={(e) => slideIcon(e.target)}
-            href="https://linkedin.com/in/riccardozanutta"
+            href="https://www.linkedin.com/in/josh-busley-0237682aa/"
             target="_blank"
           >
             <FontAwesomeIcon icon={faLinkedin} />
