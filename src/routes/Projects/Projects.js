@@ -4,7 +4,7 @@ import ClosedProjectCard from "../../components/ClosedProjectCard/ClosedProjectC
 import { motion, AnimatePresence } from "framer-motion";
 import OpenProjectCard from "../../components/OpenProjectCard/OpenProjectCard";
 import {projects} from "../../utils/data.js";
-
+import ContactLinks from "../../components/ContactLinks/ContactLinks.js";
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
 
@@ -15,7 +15,7 @@ const Projects = () => {
   
 
   return (
-    <div id="projects" data-scroll-section className="projects_container">
+    <><div id="projects" data-scroll-section className="projects_container">
       <div className="projects_content">
         <div className="projects_title">
           <p>What I have done so far</p>
@@ -28,8 +28,7 @@ const Projects = () => {
               project={project}
               isOpen={selectedProject === project}
               onClick={() => setSelectedProject(project.title)}
-              svgPath="../../images/reddit-1.svg"
-            />
+              svgPath="../../images/reddit-1.svg" />
           ))}
           <AnimatePresence>
             {selectedProject && (
@@ -41,17 +40,15 @@ const Projects = () => {
               >
                 <OpenProjectCard
                   closeProject={() => setSelectedProject(null)}
-                  project={
-                    projects.find((proj) => proj.title === selectedProject) ||
-                    {}
-                  }
-                />
+                  project={projects.find((proj) => proj.title === selectedProject) ||
+                    {}} />
               </motion.div>
             )}
           </AnimatePresence>
         </div>
       </div>
-    </div>
+      <ContactLinks />
+    </div></>
   );
 };
 

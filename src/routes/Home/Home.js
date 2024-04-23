@@ -243,7 +243,7 @@ const Home = () => {
         </div>
       </div>
 
-      <ContactLinks />
+      
     </div>
   );
 };

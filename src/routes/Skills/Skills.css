@@ -1,12 +1,12 @@
 .skills_container {
-  height: 100vh;
-
+  min-height: 100vh;
+  padding: 20px;
   margin: 0 auto;
   display: flex;
 }
 
 div.skills_content_container {
-  height: 75vh;
+  min-height: 75vh;
   width: 75vw;
   margin: auto;
   backdrop-filter: blur(10px);
@@ -103,7 +103,19 @@ div.skills_content_container {
 }
 
 p.icon_name {
-  margin-top: -2vh;
   font-size: 1rem;
   color: white;
+}
+
+
+@media screen and (max-width: 422px) {
+
+  .skills_title h2 {
+    color: white;
+    font-size: 2rem;
+  }
+
+  .skills_title p {
+    font-size: 1rem;
+  }
 }

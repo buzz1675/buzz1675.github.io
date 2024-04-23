@@ -1,12 +1,13 @@
 .about_container {
-  height: 100vh;
+  min-height: 100vh;
   
   margin: 0;
   display: flex;
 }
 
 div.about_content_container {
-  height: 75vh;
+  min-height: 75vh;
+  height: auto;
   width: 75vw;
   margin: auto;
   backdrop-filter: blur(10px);

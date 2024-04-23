@@ -91,3 +91,24 @@ body {
   .slide-icon{
     transition: cubic-bezier();
   }
+
+
+  @media screen and (max-width: 920px) {
+
+    .links-container{
+      position:relative;
+     
+    }
+
+    .contact-links{
+      margin: 0 auto;
+      text-align: center;
+    }
+    .contact-links > li {
+      
+      justify-content: center;
+  }
+
+    
+  }
+  

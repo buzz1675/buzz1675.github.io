@@ -7,15 +7,10 @@ const ClosedProjectCard = ({ project, onClick }) => {
   const handleCardClick = () => {
     onClick(project);
     setTimeout(() => {
-      const scrollHeight = Math.max(
-        document.documentElement.scrollHeight,
-        document.body.scrollHeight,
-        document.documentElement.clientHeight
-      );
-      window.scrollTo({
-        top: scrollHeight,
-        behavior: "smooth",
-      });
+      const element = document.querySelector(".open_project_overlay");
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
     }, 0);
   };
 
@@ -30,11 +25,11 @@ const ClosedProjectCard = ({ project, onClick }) => {
 
   const [backgroundColor, setBackgroundColor] = useState(generateRandomColor);
   const [isHovered, setIsHovered] = useState(false);
-  const [key, setKey] = useState(0); // Add a key state to reset animation on hover
+  const [key, setKey] = useState(0);
 
   const handleMouseEnter = () => {
     setIsHovered(true);
-    setKey((prevKey) => prevKey + 1); // Increment key to reset animation
+    setKey((prevKey) => prevKey + 1);
   };
 
   const handleMouseLeave = () => {
@@ -49,20 +44,15 @@ const ClosedProjectCard = ({ project, onClick }) => {
         onHoverStart={handleMouseEnter}
         onHoverEnd={handleMouseLeave}
         class="foldcard"
-        style={{background:project.backgroundColour}}
+        style={{ background: project.backgroundColour }}
       >
         <div class="image">
-          <img  src={project.ThumbnailImage} />
+          <img src={project.ThumbnailImage} />
         </div>
         <div style={{ background: backgroundColor }} class="details">
           <div class="center">
-            <h1>
-              {project.title}
-              
-            </h1>
-            <p>
-              {project.shortDescription}
-            </p>
+            <h1>{project.title}</h1>
+            <p>{project.shortDescription}</p>
           </div>
         </div>
       </motion.div>

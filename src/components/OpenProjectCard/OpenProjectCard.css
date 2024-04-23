@@ -1,7 +1,7 @@
 .open_project_card {
   width: 75vw;
   margin: 1% auto;
-  z-index: 1000;
+  z-index: 5;
   background-color: transparent;
   backdrop-filter: blur(25px);
   color: white;
@@ -77,4 +77,20 @@ img.project_image:hover {
 .close_button:hover svg {
 
   color: #555; 
+}
+
+@media screen and (max-width: 520px) {
+  .description_technologies_container {
+    display: block;
+    text-align: center;
+  }
+ 
+  .description_container {
+    width: 100%;
+  }
+  .technologies_container {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+  }
 }

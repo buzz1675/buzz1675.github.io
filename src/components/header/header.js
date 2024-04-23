@@ -5,6 +5,8 @@ import { Link } from "react-scroll";
 
 const Header = () => {
   const [isTop, setIsTop] = useState(true);
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -17,15 +19,24 @@ const Header = () => {
       }
     };
 
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth < 1180); // Set your desired width here
+    };
+
     window.addEventListener("scroll", handleScroll);
+    window.addEventListener("resize", handleResize);
+
+    handleResize();
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleResize);
+
     };
   }, []);
 
   return (
-    <div className={`header_container ${isTop ? "show" : "hide"}`}>
+    <div className={`header_container ${isTop || isSmallScreen ? "show" : "hide"} ${isSmallScreen ? "gradient_background" : ""}`}>
       <div className="title">
         <p className="cyan">Josh</p>
         <p className="shift_right">Busley</p>
