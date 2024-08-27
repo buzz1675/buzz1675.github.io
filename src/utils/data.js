@@ -16,15 +16,16 @@ import ecommerceScreenshot from "../imgs/ecommerceScreenshot.png";
 import ecommerceThumbnail from "../imgs/ecommerceThumbnail.png";
 import identityLogo from "../imgs/identityLogo.png";
 import identityScreenshot from "../imgs/identityScreenshot.png";
+import wordleScreenshot from "../imgs/Wordle Screenshot.png"; 
+import wordleLogo from "../imgs/Wordle Logo.png"; 
 
 
 export const projects = [
-  
   {
     title: "Spotify Clone",
     ThumbnailImage: SpotifyLogo,
     screenshot: SpotifyAppScreenshot,
-    link:'https://buzz1675.github.io/spotify/',
+    link: "https://buzz1675.github.io/spotify/",
     shortDescription:
       "This is an app that allows users to search for songs and add them to custom playlists to save.",
     description:
@@ -37,11 +38,12 @@ export const projects = [
       { name: "Node.js", icon: faNodeJs },
       { name: "Git", icon: faGit },
     ],
-  },{
+  },
+  {
     title: "Reddit Clone",
     ThumbnailImage: redditLogo,
     screenshot: RedditScreenshot,
-    link:'https://buzz1675.github.io/reddit/',
+    link: "https://buzz1675.github.io/reddit/",
 
     backgroundColour: "#FFFFFF",
 
@@ -63,7 +65,7 @@ export const projects = [
     title: "eCommerce Site",
     ThumbnailImage: ecommerceThumbnail,
     screenshot: ecommerceScreenshot,
-    link:'',
+    link: "",
 
     backgroundColour: "#FFFFFF",
     shortDescription:
@@ -86,15 +88,34 @@ export const projects = [
     title: "Identity-Plus/Medical-Plus",
     ThumbnailImage: identityLogo,
     screenshot: identityScreenshot,
-    link:'http://identity-plus.co.uk/',
+    link: "http://identity-plus.co.uk/",
 
     backgroundColour: "#FFFFFF",
 
     description:
-      "Identity-Plus serves as my business website, while Medical-Plus stands as its sister site. Originally developed by a company, Identity-Plus has undergone personal modifications and refinements under my guidance. With a solid grasp of WordPress, I've tailored layouts, introduced products, and created pages—all while prioritizing effective SEO practices. Building upon my WordPress expertise gained from Identity-Plus, I independently crafted Medical-Plus from scratch. Using themes and plugins, I successfully developed a fully functional e-commerce site—an accomplishment I take great pride in.",
+      "Identity-Plus serves as my business website, while Medical-Plus stands as its sister site. Originally developed by a company, Identity-Plus has undergone personal modifications and refinements under my guidance. With a solid grasp of WordPress, I've tailored layouts, introduced products, and created pages—all while prioritising effective SEO practices. Building upon my WordPress expertise gained from Identity-Plus, I independently crafted Medical-Plus from scratch. Using themes and plugins, I successfully developed a fully functional e-commerce site—an accomplishment I take great pride in.",
     technologies: [
       { name: "Wordpress", icon: faJs },
       { name: "HTML", icon: faHtml5 },
+    ],
+  },
+  {
+    title: "Wordle",
+    ThumbnailImage: wordleLogo,
+    screenshot: wordleScreenshot,
+    link: "https://buzz1675.github.io/wordle/",
+
+    shortDescription:
+    "A fully working Wordle Game made with React",
+    description:
+    "This Wordle Game project was an exciting exploration of logic and interactivity in web development, utilising React for a dynamic and responsive user experience. The application challenges players to guess a hidden five-letter word within six attempts, with real-time feedback on their guesses, similar to the popular word puzzle game. Throughout this project, I focused on implementing state management and conditional rendering to handle the game's logic and UI updates. Additionally, the project reinforced my skills in using JavaScript to handle game mechanics, CSS for styling, and React for building the overall structure and flow of the application. This project not only enhanced my problem-solving skills but also served as a fun way to apply core web development concepts.",
+    technologies: [
+      { name: "JavaScript", icon: faJs },
+      { name: "HTML", icon: faHtml5 },
+      { name: "CSS", icon: faCss3 },
+      { name: "React", icon: faReact },
+            { name: "Git", icon: faGit },
+     
     ],
   },
 ];
