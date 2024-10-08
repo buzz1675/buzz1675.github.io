@@ -16,9 +16,10 @@ import ecommerceScreenshot from "../imgs/ecommerceScreenshot.png";
 import ecommerceThumbnail from "../imgs/ecommerceThumbnail.png";
 import identityLogo from "../imgs/identityLogo.png";
 import identityScreenshot from "../imgs/identityScreenshot.png";
-import wordleScreenshot from "../imgs/Wordle Screenshot.png"; 
-import wordleLogo from "../imgs/Wordle Logo.png"; 
-
+import wordleScreenshot from "../imgs/Wordle Screenshot.png";
+import wordleLogo from "../imgs/Wordle Logo.png";
+import towerScreenshot from "../imgs/Tower Defense Screenshot.png";
+import towerLogo from "../imgs/Tower Defense Logo.png";
 
 export const projects = [
   {
@@ -105,17 +106,33 @@ export const projects = [
     screenshot: wordleScreenshot,
     link: "https://buzz1675.github.io/wordle/",
 
-    shortDescription:
-    "A fully working Wordle Game made with React",
+    shortDescription: "A fully working Wordle Game made with React",
     description:
-    "This Wordle Game project was an exciting exploration of logic and interactivity in web development, utilising React for a dynamic and responsive user experience. The application challenges players to guess a hidden five-letter word within six attempts, with real-time feedback on their guesses, similar to the popular word puzzle game. Throughout this project, I focused on implementing state management and conditional rendering to handle the game's logic and UI updates. Additionally, the project reinforced my skills in using JavaScript to handle game mechanics, CSS for styling, and React for building the overall structure and flow of the application. This project not only enhanced my problem-solving skills but also served as a fun way to apply core web development concepts.",
+      "This Wordle Game project was an exciting exploration of logic and interactivity in web development, utilising React for a dynamic and responsive user experience. The application challenges players to guess a hidden five-letter word within six attempts, with real-time feedback on their guesses, similar to the popular word puzzle game. Throughout this project, I focused on implementing state management and conditional rendering to handle the game's logic and UI updates. Additionally, the project reinforced my skills in using JavaScript to handle game mechanics, CSS for styling, and React for building the overall structure and flow of the application. This project not only enhanced my problem-solving skills but also served as a fun way to apply core web development concepts.",
     technologies: [
       { name: "JavaScript", icon: faJs },
       { name: "HTML", icon: faHtml5 },
       { name: "CSS", icon: faCss3 },
       { name: "React", icon: faReact },
-            { name: "Git", icon: faGit },
-     
+      { name: "Git", icon: faGit },
+    ],
+  },
+  {
+    title: "Tower Defense Game",
+    ThumbnailImage: towerLogo,
+    screenshot: towerScreenshot,
+    link: "https://buzz1675.github.io/defensegame/",
+    backgroundColour: "#A6B04F",
+
+    shortDescription: "A fully working Wordle Game made with React",
+    description:
+      "This Tower Defense Game project provided a unique challenge in combining game logic with dynamic animations, using React and HTML Canvas for a smooth and interactive experience. The game tasks players with strategically placing towers to defend against waves of enemies, with real-time updates and feedback. I utilised React for managing state and UI interactions, while HTML Canvas enabled the creation of fluid 2D animations and visual effects. This project deepened my understanding of event handling, game loop mechanics, and rendering techniques, offering a practical application of JavaScript and CSS in game development. It was a rewarding experience that honed my skills in creating engaging, interactive web applications.",
+    technologies: [
+      { name: "JavaScript", icon: faJs },
+      { name: "HTML", icon: faHtml5 },
+      { name: "CSS", icon: faCss3 },
+      { name: "React", icon: faReact },
+      { name: "Git", icon: faGit },
     ],
   },
 ];
